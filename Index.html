@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quanto você está perdendo sem saber? — Raio-X do Dinheiro Invisível</title>
+<meta name="description" content="Responda 4 perguntas rápidas e descubra seu risco de vazamento financeiro.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230D1620'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%232E9C8C'/%3E%3C/svg%3E">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1001622092928868');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1001622092928868&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap');
+
+  :root{
+    --ink:#0D1620; --ink-2:#121F2E; --ink-3:#182739;
+    --teal:#2E9C8C; --teal-dim:rgba(46,156,140,0.14);
+    --amber:#E8A33D; --amber-dim:rgba(232,163,61,0.14);
+    --off:#EDEFEE; --off-dim:rgba(237,239,238,0.72); --off-faint:rgba(237,239,238,0.48);
+    --rule:rgba(237,239,238,0.10);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    background:var(--ink); color:var(--off); font-family:'Inter',sans-serif; min-height:100vh;
+    background-image:linear-gradient(rgba(237,239,238,0.04) 1px, transparent 1px),linear-gradient(90deg, rgba(237,239,238,0.04) 1px, transparent 1px);
+    background-size:100% 44px, 44px 100%;
+    display:flex; align-items:center; justify-content:center; padding:24px;
+  }
+  .wrap{max-width:560px; width:100%;}
+
+  .brand{display:flex; align-items:center; gap:10px; justify-content:center; margin-bottom:36px;}
+  .brand .dot{width:10px;height:10px;border-radius:50%;background:var(--teal);}
+  .brand span{font-family:'IBM Plex Mono'; font-size:13px; letter-spacing:0.08em; color:var(--off-dim);}
+
+  .progress-wrap{display:flex; gap:6px; margin-bottom:36px;}
+  .progress-seg{flex:1; height:4px; border-radius:100px; background:var(--rule); overflow:hidden;}
+  .progress-seg .fill{height:100%; width:0%; background:var(--teal); transition:width .3s ease;}
+
+  .card{background:var(--ink-2); border:1px solid var(--rule); border-radius:18px; padding:36px 30px;}
+
+  .q-kicker{font-family:'IBM Plex Mono'; font-size:12px; color:var(--teal); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:14px;}
+  .q-title{font-family:'Space Grotesk'; font-weight:700; font-size:26px; line-height:1.35; margin-bottom:28px;}
+
+  .opt{
+    display:block; width:100%; text-align:left; background:var(--ink); border:1.5px solid var(--rule);
+    border-radius:12px; padding:18px 20px; margin-bottom:12px; color:var(--off); font-family:'Inter'; font-size:16px;
+    cursor:pointer; transition:border-color .15s ease, background .15s ease;
+  }
+  .opt:hover{border-color:rgba(46,156,140,0.5); background:var(--teal-dim);}
+  .opt:active{transform:scale(0.99);}
+
+  .back-link{display:block; text-align:center; margin-top:20px; font-family:'IBM Plex Mono'; font-size:12.5px; color:var(--off-faint); cursor:pointer;}
+
+  /* RESULT SCREEN */
+  .result-badge{
+    display:inline-flex; align-items:center; gap:8px; font-family:'IBM Plex Mono'; font-size:11.5px;
+    text-transform:uppercase; letter-spacing:0.06em; padding:8px 16px; border-radius:100px; margin-bottom:20px;
+  }
+  .result-badge.alto{background:var(--amber-dim); color:var(--amber);}
+  .result-badge.medio{background:rgba(237,239,238,0.08); color:var(--off-dim);}
+  .result-badge.baixo{background:var(--teal-dim); color:var(--teal);}
+
+  .result-title{font-family:'Space Grotesk'; font-weight:700; font-size:30px; line-height:1.3; margin-bottom:16px;}
+  .result-body{font-size:16px; color:var(--off-dim); line-height:1.6; margin-bottom:28px;}
+
+  .price-mini{
+    background:var(--ink); border:1px solid rgba(46,156,140,0.3); border-radius:14px; padding:24px; text-align:center; margin-bottom:20px;
+  }
+  .price-mini .label{font-family:'IBM Plex Mono'; font-size:11px; color:var(--off-faint); text-transform:uppercase; margin-bottom:8px;}
+  .price-mini .value{font-family:'IBM Plex Mono'; font-weight:600; font-size:38px; color:var(--amber); margin-bottom:16px;}
+
+  .btn{
+    display:block; width:100%; text-align:center; font-family:'Space Grotesk'; font-weight:600; font-size:16px;
+    padding:18px; border-radius:12px; text-decoration:none; background:var(--teal); color:var(--ink); border:none; cursor:pointer;
+  }
+  .btn-secondary{ background:transparent; border:1.5px solid var(--rule); color:var(--off); margin-top:12px; }
+
+  .btn-row{ display:flex; gap:10px; }
+  .btn-row .btn{ flex:1; padding:16px 10px; font-size:14.5px; }
+  .btn-row .btn-outline{ background:transparent; border:1.5px solid rgba(46,156,140,0.5); color:var(--teal); }
+
+  .guarantee-mini{display:flex; align-items:center; gap:8px; justify-content:center; font-size:12.5px; color:var(--off-faint); margin-top:16px;}
+  .guarantee-mini .shield{width:15px;height:15px;border-radius:4px;border:1.5px solid var(--teal); display:flex;align-items:center;justify-content:center;font-size:9px;color:var(--teal);}
+
+  .hidden{display:none;}
+
+  @media (max-width:480px){
+    .card{padding:28px 22px;}
+    .q-title{font-size:22px;}
+    .result-title{font-size:25px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="brand"><span class="dot"></span><span>RASTRO</span></div>
+
+  <div class="progress-wrap" id="progressWrap"></div>
+
+  <div class="card">
+
+    <!-- QUESTION 1 -->
+    <div class="q" id="q1">
+      <div class="q-kicker">Pergunta 1 de 4</div>
+      <div class="q-title">Quantas assinaturas de streaming/apps você paga hoje?</div>
+      <button class="opt" onclick="answer(1,2)">4 ou mais</button>
+      <button class="opt" onclick="answer(1,1)">2 a 3</button>
+      <button class="opt" onclick="answer(1,0)">Só 1, ou nenhuma</button>
+    </div>
+
+    <!-- QUESTION 2 -->
+    <div class="q hidden" id="q2">
+      <div class="q-kicker">Pergunta 2 de 4</div>
+      <div class="q-title">Você sabe de cor quanto paga de tarifa bancária por mês?</div>
+      <button class="opt" onclick="answer(2,0)">Sei exatamente</button>
+      <button class="opt" onclick="answer(2,1)">Tenho uma ideia vaga</button>
+      <button class="opt" onclick="answer(2,2)">Nem sei se pago</button>
+    </div>
+
+    <!-- QUESTION 3 -->
+    <div class="q hidden" id="q3">
+      <div class="q-kicker">Pergunta 3 de 4</div>
+      <div class="q-title">Já aconteceu de olhar a fatura e não reconhecer alguma cobrança?</div>
+      <button class="opt" onclick="answer(3,2)">Sim, mais de uma vez</button>
+      <button class="opt" onclick="answer(3,1)">Já aconteceu uma vez</button>
+      <button class="opt" onclick="answer(3,0)">Nunca</button>
+    </div>
+
+    <!-- QUESTION 4 -->
+    <div class="q hidden" id="q4">
+      <div class="q-kicker">Pergunta 4 de 4</div>
+      <div class="q-title">Há quanto tempo você não revisa item por item da sua fatura?</div>
+      <button class="opt" onclick="answer(4,2)">Não lembro da última vez</button>
+      <button class="opt" onclick="answer(4,1)">Uns 3-6 meses</button>
+      <button class="opt" onclick="answer(4,0)">Reviso todo mês</button>
+    </div>
+
+    <!-- RESULT: ALTO -->
+    <div class="q hidden" id="result-alto">
+      <div class="result-badge alto">Risco alto de vazamento</div>
+      <div class="result-title">Pelas suas respostas, é bem provável que sua fatura tenha vazamento real.</div>
+      <div class="result-body">Assinatura acumulada, tarifa não conferida, cobrança estranha — esse é exatamente o padrão que o Raio-X foi feito pra encontrar. Sobe o PDF da sua fatura agora e veja o número de verdade, não só a estimativa.</div>
+      <div class="price-mini">
+        <div class="label">Raio-X completo</div>
+        <div class="value">R$ 19,90</div>
+        <div class="btn-row">
+          <a href="https://pay.kiwify.com.br/9nojKD1" class="btn">Comprar agora</a>
+          <a href="https://raiox.cernecorp.com.br" class="btn btn-outline">Ver como funciona</a>
+        </div>
+      </div>
+      <div class="guarantee-mini"><span class="shield">✓</span>7 dias de garantia — sem risco</div>
+    </div>
+
+    <!-- RESULT: MEDIO -->
+    <div class="q hidden" id="result-medio">
+      <div class="result-badge medio">Risco moderado</div>
+      <div class="result-title">Você parece estar de olho, mas ainda pode ter vazamento escondido.
